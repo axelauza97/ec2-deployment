@@ -58,4 +58,4 @@ jobs:
             sudo docker rm nextjs-app || true
 
             echo "Running new container..."
-            sudo docker run -d -p 3000:3000 --name nextjs-app ghcr.io/${{ github.repository_owner }}/nextjs-app:latest
+            sudo docker run -d -p 80:3000 --name nextjs-app ghcr.io/${{ github.repository_owner }}/nextjs-app:latest
